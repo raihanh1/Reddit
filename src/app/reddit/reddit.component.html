@@ -1,0 +1,21 @@
+<h1>Poor man's Reddit</h1>
+<div class="feedProfile" *ngFor="let feed of feeds; index as i" feed="feed">
+  <img
+    *ngIf="feed.data.thumbnail != 'default' && feed.data.thumbnail != 'spoiler'"
+    src="{{ feed.data.thumbnail }}"
+  />
+  <img
+    *ngIf="feed.data.thumbnail == 'default'"
+    src="https://www.reddit.com/static/noimage.png"
+  />
+  <img
+    *ngIf="feed.data.thumbnail == 'spoiler'"
+    src="	https://www.reddit.com/static/self_default2.png"
+  />
+  <p>
+    {{ feed.data.title }} (<a
+      href="https://www.reddit.com{{ feed.data.permalink }}"
+      >Link to post</a
+    >)
+  </p>
+</div>

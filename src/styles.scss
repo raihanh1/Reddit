@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.feedProfile {
+  margin: auto;
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+img,
+p {
+  display: inline-block;
+}
+
+p {
+  width: 70%;
+  margin-left: 20px;
+}
+
+body {
+  background-color: beige;
+  font-family: "Roboto";
+}
